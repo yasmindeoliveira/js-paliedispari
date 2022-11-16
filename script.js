@@ -42,11 +42,61 @@ Dichiariamo chi ha vinto.
 
 // ----------------------- PARI E DISPARI ----------------------------
 
-/* let pariDispari = prompt("Scegli pari o dispari?");
-let numeroUtente */
+let pariDispari = prompt("Scegli pari o dispari?");
+let numeroUtenteStringa = prompt("Scegli un numero da 1 a 5:");
+let numeroUtente = parseInt(numeroUtenteStringa);
+let numeroComputer = random();
+let somma = numeroUtente + numeroComputer;
+
+console.log("Hai scelto: " + pariDispari);
+console.log("Numero Utente: " + numeroUtente);
+console.log("Numero computer: " + numeroComputer);
+console.log("La somma: " + somma);
+
+let risultatoSomma = sommaPariDispari();
+console.log(risultatoSomma);
+
+
+switch (risultatoSomma) {
+
+    case "pari":
+        if (pariDispari == "pari") {
+
+            console.log("HAI VINTO!");
+
+        } else {
+
+            console.log("Hai perso...");
+        };
+        break;
+    
+    case "dispari":
+        if (pariDispari == "pari") {
+
+            console.log("Hai perso...");
+
+        } else {
+
+            console.log("HAI VINTO!")
+        };
+    
+};
+
+
+
+
+
+
+
+
+
+
+
 
 
 // -------------- FUNZIONI ----------------------
+
+// Funzione parola palindroma
 
 function parolaPalindroma (parola){
 
@@ -62,4 +112,26 @@ function parolaPalindroma (parola){
 
 };
 
+// Funzione pari o dispari
+
+function random (){
+
+    let numeroRandom = Math.floor((Math.random() * 5) + 1);
+    return numeroRandom
+
+};
+
+function sommaPariDispari () {
+
+    if (somma % 2 != 0){
+
+        return "dispari";
+   
+   } else {
+   
+       return "pari";
+   
+   };   
+
+};
     

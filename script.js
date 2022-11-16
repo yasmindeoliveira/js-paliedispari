@@ -54,7 +54,7 @@ console.log("Numero computer: " + numeroComputer);
 console.log("La somma: " + somma);
 
 let risultatoSomma = sommaPariDispari();
-console.log(risultatoSomma);
+console.log("La somma è: " + risultatoSomma);
 
 
 switch (risultatoSomma) {
@@ -81,17 +81,6 @@ switch (risultatoSomma) {
         };
     
 };
-
-
-
-
-
-
-
-
-
-
-
 
 
 // -------------- FUNZIONI ----------------------

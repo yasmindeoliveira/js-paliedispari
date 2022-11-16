@@ -53,7 +53,7 @@ console.log("Numero Utente: " + numeroUtente);
 console.log("Numero computer: " + numeroComputer);
 console.log("La somma: " + somma);
 
-let risultatoSomma = sommaPariDispari();
+let risultatoSomma = sommaPariDispari(somma);
 console.log("La somma è: " + risultatoSomma);
 
 
@@ -110,7 +110,7 @@ function random (){
 
 };
 
-function sommaPariDispari () {
+function sommaPariDispari (somma) {
 
     if (somma % 2 != 0){
 
